@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>galley</title>
+		<link rel="stylesheet" type="text/css" href="css/new_file.css"/>
+		<style>
+			a{text-decoration:none;color:black;}
+		</style>
+		<script>
+			function toggle(){
+				var music=document.getElementById("music2")
+				if(music2.paused){
+					music2.play();
+					document.getElementById("playcontrol").src="img/play.png";
+				}
+				else{
+					music2.pause();
+					document.getElementById("playcontrol").src="img/pause.png";
+				}
+			}
+		</script>
+	</head>
+	<body class="qubaibian">
+		<audio id="music2" src="gallerymusic.mp3" autoplay="autoplay" loop="loop"></audio>
+		<img src="img/130.jpg" class="gallerybg" />
+		<div id="gallerymain">
+			<table style="width: 100%; ">
+				<tr style="height: 70px;">
+					<td class="first">相册</td>
+					<td class="second"><a style="color: azure;" href="about.html">自我介绍</a></td>
+					<td class="third"><a style="color: azure;" href="index.html">主页</a></td>
+				</tr>
+			</table>
+			<div id="box">
+				<div class="photo_frame">
+					<img src="img/1010.png" />
+				</div>
+				<div class="photo_frame">
+					<img src="img/1010.png" />
+				</div>
+				<div class="photo_frame">
+					<img src="img/1010.png" />
+				</div>
+				<div class="photo_frame">
+					<img src="img/12.13-id=53990807.png" />
+				</div>
+				<div class="photo_frame">
+					<img src="img/12.13-id=53990807.png" />
+				</div>
+				<div class="photo_frame">
+					<img src="img/12.13-id=53990807.png" />
+				</div>
+			</div>
+			<div class="music">
+				<img class="musicimg" src="img/20140714114812-2021199413.jpg" width="82px" height="82px">
+				<img id="playcontrol" src="img/play.png" onclick="toggle()">
+			</div>
+			<div id="pride"></div>
+			</div>
+			<div id="i1">
+				<img src="img/2575dc33c895d14395d096d672f0820258af07f6.jpg" width="300px" height="380px" />
+			</div>
+		</div>
+	</body>
+</html>

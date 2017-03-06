@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>about</title>
+		<link rel="stylesheet" type="text/css" href="css/new_file.css"/>
+		<style>
+			a{text-decoration:none;color:black;}
+		</style>
+		<script>
+			function toggle(){
+				if(music1.paused){
+					music1.play();
+					document.getElementById("playcontrol").src="img/play.png";
+				}
+				else{
+					music1.pause();
+					document.getElementById("playcontrol").src="img/pause.png";
+				}
+			}
+		</script>
+	</head>
+	<body class="qubaibian">
+		<audio id="music1" src="Fall Out Boy - My Songs Know What You Did In the Dark(Light'Em Up).mp3" autoplay="autoplay" loop="loop"></audio>
+		<div id="aboutmain">
+			<img src="img/1256.png" width="100%" height="100%"/>
+			<table style="width: 100%; position: fixed; top: 0; left: 0;">
+				<tr style="height: 70px;">
+					<td class="first">自我介绍</td>
+					<td class="second"><a style="color: azure;" href="index.html">主页</a></td>
+					<td class="third"><a style="color: azure;" href="gallery.html">相册</a></td>
+				</tr>
+			</table>
+			<div id="article">
+				<div id="fp">姓沈名鹏杰，死宅一枚，平日里非常的绅（hen）士（tai）。也有做过白日梦。总是在成熟与不成熟之间徘徊。性格多变，上一秒笑的很灿烂下一秒就中二了。总是会不明原因的靠近一个人，妄想和ta建立坚固的友谊，不过每一次都有些失败呢。我的存在感很低，在三个人里一般就是被无视的那个。我总是在不该沉默的时候沉默，不该活跃的时候活跃。我就是这样的一个矛盾体，也许我从来都没有成熟过，也也许我从来都没有幼稚过。我不喜欢别人自以为是的评判我。我很懒，平时爱宅在宿舍，学过架子鼓，所以在宿舍常常一个人在那里自嗨，被室友当成智障看，不过我一点都不在意，反正走自己的路让他人说去吧这份自我介绍大概写的有些混乱，不过我就是我，我是spj。</div>
+				<div id="hobby"></div>
+				
+			</div>
+			<div class="music">
+				<img class="musicimg" src="img/u=3402061684,823704190&fm=23&gp=0.jpg" width="82px" height="82px">
+				<img id="playcontrol" src="img/play.png" onclick="toggle()">
+			</div>
+			
+		</div>
+	</body>
+</html>
